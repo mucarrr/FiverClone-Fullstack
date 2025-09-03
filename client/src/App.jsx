@@ -1,0 +1,38 @@
+import React from 'react'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Home from './pages/home/Home'
+import Create from './pages/create/Create'
+import Details from './pages/details/Details'
+import Login from './pages/login/Login'
+import Register from './pages/register/Register'
+import Search from './pages/search/Search'
+import { Routes, Route, BrowserRouter } from 'react-router-dom'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+import { AuthProvider } from './context/authContext'
+const App = () => {
+  return (
+    <BrowserRouter>
+    <AuthProvider>
+    <div className='flex flex-col min-h-screen'>
+      <Header />
+      <div className='flex-1 p-5 max-w-[1440px] mx-auto w-full'>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/add-gig" element={<Create />} />
+          <Route path="/details" element={<Details />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/search" element={<Search />} />
+        </Routes>
+      </div>
+      <Footer />
+      <ToastContainer />
+    </div>
+    </AuthProvider>
+    </BrowserRouter>
+  )
+}
+
+export default App
