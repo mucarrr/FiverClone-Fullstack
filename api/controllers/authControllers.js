@@ -1,15 +1,21 @@
 import bcrypt from "bcrypt";
 import User from "../models/authModels.js";
 import jwt from "jsonwebtoken";
+import { upload } from "../utils/cloudinary.js";
 
 
-const register = async (req, res) => {
+const register = async (req, res, next) => {
     try{
         // console.log("Request body:", req.body);
         // console.log("Request body type:", typeof req.body);
 
         const hashedPassword = bcrypt.hashSync(req.body.password, 12);
         // console.log("Password hashed successfully");
+
+        const photo = await upload(next, req.file.path, "profile-images", 200, 200, "fill", 90);
+        console.log(photo);
+        const photoUrl = photo.secure_url;
+        req.body.photo = photoUrl;
         
         const newUser = await User.create({
             ...req.body,

@@ -27,7 +27,7 @@ const Register = () => {
           <Input label="Username" type="text" name="username" placeholder="Enter your username" required/>
           <Input label="Email" type="email" name="email" placeholder="Enter your email" required/>
           <Input label="Country" type="text" name="country" placeholder="Enter your country" required/>
-          {/* <Input label="Photo" type="file" name="photo" placeholder="Enter your photo" required/> */}
+          <Input label="Photo" type="file" name="photo" placeholder="Enter your photo" required/>
           <Input label="Password" type="password" name="password" placeholder="Enter your password" required/>
           </div>
           {/* right area */}

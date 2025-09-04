@@ -9,7 +9,8 @@ const Category = () => {
         categories.map((i,key)=>(
 
           <Link
-            to={`/search?category=${i.name}`}
+            key={key}
+            to={`/search?category=${encodeURIComponent(i.name)}`}
             className='border shadow p-4 rounded-md cursor-pointer hover:shadow-xl border-zinc-200 hover:bg-gray-100 transition'
           >
             <div className="flex flex-col gap-3 items-center text-center">

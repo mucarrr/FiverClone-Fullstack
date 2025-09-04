@@ -1,0 +1,262 @@
+[
+  {
+    "user": "68b999d43e38b3cf8fe25a3f",
+    "title": "Professional Web Development with React & Node.js",
+    "description": "I will create a modern, responsive website using React for frontend and Node.js for backend. Includes database setup, API development, and deployment. Perfect for businesses looking to establish a strong online presence.",
+    "reviewCount": 127,
+    "starCount": 4.9,
+    "category": "Programming & Technology",
+    "coverImage": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop"
+    ],
+    "packageTitle": "Basic Website Package",
+    "packageDescription": "Complete website development with basic features and responsive design",
+    "packagePrice": 299,
+    "packageDuration": 7,
+    "packageFeatures": [
+      "Responsive Design",
+      "5 Pages",
+      "Contact Form",
+      "SEO Optimization",
+      "1 Month Support"
+    ],
+    "packageRevision": 3
+  },
+  {
+    "user": "68b999d43e38b3cf8fe25a3e",
+    "title": "Full-Stack Web Application Development",
+    "description": "I will build a complete full-stack web application using modern technologies like React, Node.js, and MongoDB. Includes user authentication, database design, and deployment. Perfect for startups and businesses needing scalable web solutions.",
+    "reviewCount": 95,
+    "starCount": 4.8,
+    "category": "Programming & Technology",
+    "coverImage": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=600&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop"
+    ],
+    "packageTitle": "Full-Stack Development",
+    "packageDescription": "Complete web application with frontend and backend",
+    "packagePrice": 599,
+    "packageDuration": 14,
+    "packageFeatures": [
+      "User Authentication",
+      "Database Design",
+      "API Development",
+      "Responsive UI",
+      "Deployment Setup"
+    ],
+    "packageRevision": 5
+  },
+  {
+    "user": "68b999d43e38b3cf8fe25a41",
+    "title": "Mobile App Development for iOS & Android",
+    "description": "I will create a native mobile application for both iOS and Android platforms using React Native. Includes app store optimization, testing, and deployment. Professional mobile app that will engage your users and grow your business.",
+    "reviewCount": 73,
+    "starCount": 4.7,
+    "category": "Programming & Technology",
+    "coverImage": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop"
+    ],
+    "packageTitle": "Mobile App Package",
+    "packageDescription": "Cross-platform mobile app development",
+    "packagePrice": 799,
+    "packageDuration": 21,
+    "packageFeatures": [
+      "iOS & Android",
+      "App Store Setup",
+      "Testing & Debugging",
+      "Performance Optimization",
+      "3 Months Support"
+    ],
+    "packageRevision": 4
+  },
+  {
+    "user": "68b999d43e38b3cf8fe25a40",
+    "title": "E-commerce Website with Payment Integration",
+    "description": "I will build a complete e-commerce website with secure payment processing, inventory management, and admin dashboard. Includes Stripe/PayPal integration, order tracking, and customer management. Professional online store that will boost your sales.",
+    "reviewCount": 112,
+    "starCount": 4.9,
+    "category": "Programming & Technology",
+    "coverImage": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop"
+    ],
+    "packageTitle": "E-commerce Package",
+    "packageDescription": "Complete online store with payment processing",
+    "packagePrice": 899,
+    "packageDuration": 28,
+    "packageFeatures": [
+      "Product Catalog",
+      "Payment Integration",
+      "Admin Dashboard",
+      "Order Management",
+      "6 Months Support"
+    ],
+    "packageRevision": 6
+  },
+  {
+    "user": "68b999d43e38b3cf8fe25a42",
+    "title": "Custom API Development & Integration",
+    "description": "I will develop custom APIs and integrate third-party services for your business needs. Includes RESTful API design, documentation, testing, and deployment. Scalable backend solutions that will streamline your operations and improve efficiency.",
+    "reviewCount": 67,
+    "starCount": 4.8,
+    "category": "Programming & Technology",
+    "coverImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop"
+    ],
+    "packageTitle": "API Development Package",
+    "packageDescription": "Custom API development and third-party integration",
+    "packagePrice": 449,
+    "packageDuration": 10,
+    "packageFeatures": [
+      "RESTful API Design",
+      "API Documentation",
+      "Testing & Validation",
+      "Deployment Setup",
+      "2 Months Support"
+    ],
+    "packageRevision": 3
+  },
+  {
+    "user": "68b999d43e38b3cf8fe25a45",
+    "title": "Creative Logo & Brand Identity Design",
+    "description": "I will design a unique and memorable logo that perfectly represents your brand. Includes multiple concepts, color variations, and brand guidelines. Professional design that will make your business stand out from the competition.",
+    "reviewCount": 89,
+    "starCount": 4.8,
+    "category": "Graphics & Design",
+    "coverImage": "https://images.unsplash.com/photo-1561070791-2526d41294b5?w=800&h=600&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1561070791-2526d41294b5?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1558655146-d09347e92766?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=800&h=600&fit=crop"
+    ],
+    "packageTitle": "Logo Design Package",
+    "packageDescription": "Professional logo design with multiple concepts and brand guidelines",
+    "packagePrice": 149,
+    "packageDuration": 5,
+    "packageFeatures": [
+      "3 Logo Concepts",
+      "Color Variations",
+      "Brand Guidelines",
+      "Source Files",
+      "2 Revisions"
+    ],
+    "packageRevision": 2
+  },
+  {
+    "user": "68b999d43e38b3cf8fe25a46",
+    "title": "Digital Marketing Strategy & Social Media Management",
+    "description": "I will create a comprehensive digital marketing strategy and manage your social media presence. Includes content creation, audience analysis, and performance tracking. Boost your online visibility and engage with your target audience effectively.",
+    "reviewCount": 156,
+    "starCount": 4.7,
+    "category": "Digital Marketing",
+    "coverImage": "https://images.unsplash.com/photo-1557838923-2985c318be48?w=800&h=600&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1557838923-2985c318be48?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop"
+    ],
+    "packageTitle": "Social Media Management",
+    "packageDescription": "Complete social media management with content creation and strategy",
+    "packagePrice": 199,
+    "packageDuration": 30,
+    "packageFeatures": [
+      "Content Calendar",
+      "Daily Posts",
+      "Community Management",
+      "Performance Reports",
+      "Strategy Consultation"
+    ],
+    "packageRevision": 5
+  },
+  {
+    "user": "68b999d43e38b3cf8fe25a47",
+    "title": "Professional Content Writing & Blog Creation",
+    "description": "I will write engaging, SEO-optimized content for your website, blog, or marketing materials. Includes keyword research, content strategy, and editing. High-quality writing that will attract and retain your audience while improving search rankings.",
+    "reviewCount": 203,
+    "starCount": 4.9,
+    "category": "Writing & Translation",
+    "coverImage": "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&h=600&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=600&fit=crop"
+    ],
+    "packageTitle": "Blog Writing Package",
+    "packageDescription": "Professional blog writing with SEO optimization and editing",
+    "packagePrice": 99,
+    "packageDuration": 3,
+    "packageFeatures": [
+      "1000 Words",
+      "SEO Optimization",
+      "Keyword Research",
+      "2 Revisions",
+      "Meta Descriptions"
+    ],
+    "packageRevision": 2
+  },
+  {
+    "user": "68b999d43e38b3cf8fe25a43",
+    "title": "Video Editing & Motion Graphics",
+    "description": "I will edit your videos and create stunning motion graphics that will captivate your audience. Includes color grading, sound design, and special effects. Professional quality videos that will elevate your content and brand.",
+    "reviewCount": 78,
+    "starCount": 4.8,
+    "category": "Video & Animation",
+    "coverImage": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=600&fit=crop"
+    ],
+    "packageTitle": "Video Editing Package",
+    "packageDescription": "Professional video editing with motion graphics and effects",
+    "packagePrice": 249,
+    "packageDuration": 10,
+    "packageFeatures": [
+      "Up to 10 Minutes",
+      "Color Grading",
+      "Motion Graphics",
+      "Sound Design",
+      "3 Revisions"
+    ],
+    "packageRevision": 3
+  },
+  {
+    "user": "68b999d43e38b3cf8fe25a44",
+    "title": "AI Chatbot Development & Integration",
+    "description": "I will develop and integrate intelligent AI chatbots for your website or application. Includes natural language processing, custom training, and seamless integration. Smart chatbots that will improve customer service and user engagement.",
+    "reviewCount": 45,
+    "starCount": 4.8,
+    "category": "AI Services",
+    "coverImage": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop"
+    ],
+    "packageTitle": "AI Chatbot Package",
+    "packageDescription": "Intelligent chatbot development and integration",
+    "packagePrice": 599,
+    "packageDuration": 21,
+    "packageFeatures": [
+      "Natural Language Processing",
+      "Custom Training",
+      "Integration Setup",
+      "Analytics Dashboard",
+      "3 Months Support"
+    ],
+    "packageRevision": 4
+  }
+]

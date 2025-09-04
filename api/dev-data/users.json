@@ -1,0 +1,102 @@
+[
+  {
+    "username": "john_doe",
+    "email": "john@example.com",
+    "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop",
+    "country": "United States",
+    "password": "password123",
+    "isSeller": true,
+    "phone": 1234567890,
+    "description": "Experienced web developer with 5+ years in React and Node.js. Passionate about creating clean, efficient code."
+  },
+  {
+    "username": "sarah_smith",
+    "email": "sarah@example.com",
+    "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop",
+    "country": "Canada",
+    "password": "password123",
+    "isSeller": true,
+    "phone": 9876543210,
+    "description": "Creative graphic designer specializing in brand identity and UI/UX design. Let's bring your vision to life!"
+  },
+  {
+    "username": "mike_wilson",
+    "email": "mike@example.com",
+    "photo": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop",
+    "country": "United Kingdom",
+    "password": "password123",
+    "isSeller": true,
+    "phone": 5551234567,
+    "description": "Full-stack developer with expertise in modern web technologies. Building scalable solutions for businesses."
+  },
+  {
+    "username": "emma_davis",
+    "email": "emma@example.com",
+    "photo": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop",
+    "country": "Australia",
+    "password": "password123",
+    "isSeller": true,
+    "phone": 4445556666,
+    "description": "Digital marketing specialist helping businesses grow their online presence through strategic campaigns."
+  },
+  {
+    "username": "alex_chen",
+    "email": "alex@example.com",
+    "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop",
+    "country": "Singapore",
+    "password": "password123",
+    "isSeller": true,
+    "phone": 3334445555,
+    "description": "Mobile app developer creating intuitive and engaging user experiences for iOS and Android platforms."
+  },
+  {
+    "username": "lisa_johnson",
+    "email": "lisa@example.com",
+    "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop",
+    "country": "Germany",
+    "password": "password123",
+    "isSeller": false,
+    "phone": 1112223333,
+    "description": "Marketing manager looking for creative solutions to enhance our brand presence."
+  },
+  {
+    "username": "david_brown",
+    "email": "david@example.com",
+    "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop",
+    "country": "France",
+    "password": "password123",
+    "isSeller": false,
+    "phone": 2223334444,
+    "description": "Startup founder seeking talented developers to build our next big product."
+  },
+  {
+    "username": "anna_garcia",
+    "email": "anna@example.com",
+    "photo": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop",
+    "country": "Spain",
+    "password": "password123",
+    "isSeller": false,
+    "phone": 3334445555,
+    "description": "Content creator looking for professional designers to help with branding."
+  },
+  {
+    "username": "tom_lee",
+    "email": "tom@example.com",
+    "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop",
+    "country": "Japan",
+    "password": "password123",
+    "isSeller": false,
+    "phone": 4445556666,
+    "description": "Business consultant seeking web development services for client projects."
+  },
+  {
+    "username": "maria_silva",
+    "email": "maria@example.com",
+    "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop",
+    "country": "Brazil",
+    "password": "password123",
+    "isSeller": false,
+    "phone": 5556667777,
+    "description": "Event planner looking for creative design services for upcoming corporate events."
+  }
+]

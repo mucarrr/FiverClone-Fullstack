@@ -11,8 +11,11 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import { AuthProvider } from './context/authContext'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 const App = () => {
+  const queryClient = new QueryClient()
   return (
+    <QueryClientProvider client={queryClient}>
     <BrowserRouter>
     <AuthProvider>
     <div className='flex flex-col min-h-screen'>
@@ -21,7 +24,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/add-gig" element={<Create />} />
-          <Route path="/details" element={<Details />} />
+          <Route path="/details/:id" element={<Details />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/search" element={<Search />} />
@@ -32,6 +35,7 @@ const App = () => {
     </div>
     </AuthProvider>
     </BrowserRouter>
+    </QueryClientProvider>
   )
 }
 

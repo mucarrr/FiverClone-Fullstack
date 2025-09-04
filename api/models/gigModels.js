@@ -31,7 +31,7 @@ const gigSchema = new Schema({
     coverImage: {
         type: String,
         required: [true, "Cover image is required"],
-        default: "https://www.dakotapulse.com/wp-content/uploads/2022/01/fiverr-og-logo-1024x538.png",
+    //     default: "https://www.dakotapulse.com/wp-content/uploads/2022/01/fiverr-og-logo-1024x538.png",
     },
     images: {
         type: [String],
