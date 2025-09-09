@@ -2,6 +2,7 @@ import bcrypt from "bcrypt";
 import User from "../models/authModels.js";
 import jwt from "jsonwebtoken";
 import { upload } from "../utils/cloudinary.js";
+import sendMail from "../utils/mailtrap.js";
 
 
 const register = async (req, res, next) => {
@@ -63,5 +64,20 @@ const logout = async (req, res) => {
         res.status(500).json({message: err.message});
     }
 }
+const forgotPassword = async (req, res) => {
+    try{
+        const user = await User.findOne({email: req.body.email});
+        if(!user){
+            return res.status(404).json({message: "User not found"});
+        }
+        const resetToken = user.createPasswordResetToken();
+        await user.save({validateBeforeSave: false});
+        await sendMail(user.email, "Reset password link", `<p>Hi ${user.username}, Click <a href="${process.env.FRONTEND_URL}/reset-password/${resetToken}">here</a> to reset your password</p>`);
+        res.status(200).json({message: "Reset password link sent to email"});
 
-export { register, login, logout };
+    }catch(err){
+        res.status(500).json({message: "Error in forgot password"});
+    }
+}
+
+export { register, login, logout, forgotPassword };

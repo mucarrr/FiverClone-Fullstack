@@ -1,4 +1,5 @@
 import {model, Schema} from "mongoose";
+import validator from "validator";
 
 const userSchema = new Schema({
     username : {
@@ -24,6 +25,11 @@ const userSchema = new Schema({
         required: [true, "Password is required"],
         minlength: 8,
     },
+    passwordConfirm: {
+        type: String,
+        required: [true, "Passwords are not the same"],
+        validate: [validator.isStrongPassword, "Password is not strong enough"],
+    },
     isSeller : {
         type: Boolean,
         default: false,
@@ -33,9 +39,36 @@ const userSchema = new Schema({
     },
     description: {
         type: String,
-    }
+    },
+    passwordResetToken: {
+        type: String,
+    },
+   passwordResetAt: {
+    type: Date,
+   },
+   passwordResetTokenExpires: {
+    type: Date,
+   }
 }, {timestamps: true});
 
+
+userSchema.pre("save", function(next){
+    this.passwordConfirm = undefined;
+    next();
+});
+userSchema.pre("save", function(next){
+    if(!this.isModified("password") || this.isNew){
+        return next();
+    }
+    this.passwordResetAt = Date.now() - 2000;
+    next();
+});
+userSchema.methods.createPasswordResetToken = function(){
+    const resetToken = crypto.randomBytes(32).toString("hex");
+    this.passwordResetToken = crypto.createHash("sha256").update(resetToken).digest("hex");
+    this.passwordResetTokenExpires = Date.now() + 10 * 60 * 1000;
+    return resetToken;
+}
 const User = model("User", userSchema);
 
 export default User;

@@ -24,7 +24,8 @@ const Login = () => {
         </div>
         
       </form>
-      <p className='text-sm text-gray-500 text-center mt-5'>Don't have an account? <Link to="/register" className='text-blue-500'>Register</Link></p>
+      <p className='text-sm text-gray-500 mt-5'>Don't have an account? <Link to="/register" className='text-blue-500'>Register</Link></p>
+      <p className='text-sm text-gray-500 mt-5'>Forgot password? <Link to="/forgot-password" className='text-blue-500'>Reset password</Link></p>
     </div>
   )
 }
