@@ -1,8 +1,10 @@
-import bcrypt from "bcrypt";
+
 import User from "../models/authModels.js";
 import jwt from "jsonwebtoken";
 import { upload } from "../utils/cloudinary.js";
 import sendMail from "../utils/mailtrap.js";
+import bcrypt from "bcrypt";
+import crypto from "crypto";
 
 
 const register = async (req, res, next) => {
@@ -72,12 +74,38 @@ const forgotPassword = async (req, res) => {
         }
         const resetToken = user.createPasswordResetToken();
         await user.save({validateBeforeSave: false});
-        await sendMail(user.email, "Reset password link", `<p>Hi ${user.username}, Click <a href="${process.env.FRONTEND_URL}/reset-password/${resetToken}">here</a> to reset your password</p>`);
+        await sendMail(user.email, 
+            "Reset password link", 
+            `<p>Hi ${user.username}, Click here to reset your password</p>
+            <a href=http://localhost:5173/reset-password/${resetToken}>Reset password</a>`);
         res.status(200).json({message: "Reset password link sent to email"});
 
     }catch(err){
-        res.status(500).json({message: "Error in forgot password"});
+        console.error("Forgot password error:", err);
+        res.status(500).json({message: "Error in forgot password", error: err.message});
     }
 }
 
-export { register, login, logout, forgotPassword };
+const resetPassword = async (req, res) => {
+    try{
+        if(req.body.password !== req.body.passwordConfirm){
+            return res.status(400).json({message: "Passwords do not match"});
+        }
+        
+        const hashedPassword = crypto.createHash("sha256").update(req.params.token).digest("hex");
+        const user = await User.findOne({passwordResetToken: hashedPassword, passwordResetTokenExpires: {$gt: Date.now()}});
+        if(!user){
+            return res.status(404).json({message: "Invalid or expired token"});
+        }
+        user.password = req.body.password;
+        user.passwordConfirm = req.body.passwordConfirm;
+        user.password = bcrypt.hashSync(user.password, 12); 
+        user.passwordResetToken = undefined;
+        user.passwordResetTokenExpires = undefined;
+        await user.save();
+        res.status(200).json({message: "Password reset successfully"});
+    }catch(err){
+        res.status(500).json({message: "Error in reset password", error: err.message});
+    }
+}
+export { register, login, logout, forgotPassword, resetPassword };

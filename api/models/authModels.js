@@ -1,5 +1,6 @@
 import {model, Schema} from "mongoose";
 import validator from "validator";
+import crypto from "crypto";
 
 const userSchema = new Schema({
     username : {

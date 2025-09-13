@@ -1,12 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Input from '../../components/Input'
 import CustomButton from '../../components/CustomButton'
 import { Link } from 'react-router-dom'
+import { api } from '../../api'
+import { toast } from 'react-toastify'
 
-const Login = () => {
+const ForgotPassword = () => {
+  const [sent, setSent] = useState(false)
   const handleSubmit = async (e) => {
     e.preventDefault()
-    
+    const email = e.target[0].value
+    api.post("/auth/forgot-password", {email}).then((res) => {
+      setSent(true)
+      toast.success(res.data.message)
+    }).catch((err) => {
+      toast.error(err.response.data.message)
+    })
+  }
+  if(sent){
+    return <div className='max-w-[400px] sm:max-w-[500px] mx-auto pt-24'>
+      <h1 className='text-2xl text-gray-500 font-bold mb-5'>Reset password link sent to email</h1>
+      <p className='text-sm text-gray-500 mt-5'>Reset password link sent to email</p>
+    </div>
   }
   return (
     <div className='max-w-[400px] sm:max-w-[500px] mx-auto pt-24'>
@@ -23,4 +38,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default ForgotPassword
