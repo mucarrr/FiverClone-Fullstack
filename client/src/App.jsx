@@ -25,7 +25,7 @@ const App = () => {
       <div className='flex-1 p-5 max-w-[1440px] mx-auto w-full'>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/details/:id" element={<Details />} />
+          <Route path="/gig/:id" element={<Details />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
@@ -33,6 +33,7 @@ const App = () => {
           <Route path="/search" element={<Search />} />
           <Route element={<Protected />} >
           <Route path="/add-gig" element={<Create/>}/>
+          <Route path="/gig/:id/edit" element={<Create/>}/>
           </Route>
           
         </Routes>
