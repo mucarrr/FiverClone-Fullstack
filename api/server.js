@@ -5,6 +5,8 @@ import authRoutes from "./routes/authRoutes.js";
 import gigRoutes from "./routes/gigRoutes.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
+import { errorHandler } from "./middlewares/errorHandler.js";
+import { notFound } from "./middlewares/notFound.js";
 dotenv.config();
 
 mongoose.connect(process.env.DATABASE_URL, {
@@ -27,14 +29,8 @@ app.use(cors({
 app.use("/api/auth", authRoutes);
 app.use("/api/gigs", gigRoutes);
 
-
-
-
-
-
-
-
-
+app.use(notFound);
+app.use(errorHandler);
 
 app.listen(process.env.PORT, () => {
   console.log(`Server is running on port ${process.env.PORT}`);
