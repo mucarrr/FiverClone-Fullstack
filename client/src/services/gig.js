@@ -24,7 +24,7 @@ export const gigService = {
 const useGetAllGigs = (params) => useQuery({
     queryKey : ["gigs", params],
     queryFn : () => gigService.getAll(params),
-    select: (res) => res.data
+    select: (res) => res.data.gigs
 }) 
 // get single service and save in memory
 const useGetOneGig = (id) => useQuery({

@@ -1,35 +1,45 @@
 import Gig from "../models/gigModels.js";
 import { upload } from "../utils/cloudinary.js";
 import c from "../utils/catchAsync.js";
-const getGigs = c(async (req, res, next) => {
-    const buildFilters = (query) =>{
-        const filters = {};
-        if(query.category){
-            filters.category = query.category;
-        }
-        if(query._id){
-            filters.user = query._id;
-        }
-        if(query.min || query.max){
-            filters.packagePrice = {};
-            if(query.min){
-                filters.packagePrice.$gte = query.min;
-            }
-            if(query.max){
-                filters.packagePrice.$lte = query.max;
-            }
-        }
-        if(query.search){
-            filters.title = { $regex: query.search, $options: "i" }; //insensitive search a A
-        }
-        return filters;
+
+const buildFilters = (query) =>{
+    const filters = {};
+    let sort = {};
+    if(query.category){
+        filters.category = query.category;
     }
+    if(query._id){
+        filters.user = query._id;
+    }
+    if(query.min || query.max){
+        filters.packagePrice = {};
+        if(query.min){
+            filters.packagePrice.$gte = query.min;
+        }
+        if(query.max){
+            filters.packagePrice.$lte = query.max;
+        }
+    }
+    if(query.search){
+        filters.title = { $regex: query.search, $options: "i" }; //insensitive search a A
+    }
+    if(query.sortBy){
+        const order = query.order === "desc" ? -1 : 1;
+        sort[query.sortBy] = order;
+    }else{
+        sort.createdAt = -1;
+    }
+    return {filters, sort};
+}
+
+const getGigs = c(async (req, res, next) => {
+    const {filters, sort} = buildFilters(req.query);
     
-    const gigs = await Gig.find(buildFilters(req.query)).populate("user", "username photo");
+    const gigs = await Gig.find(filters).sort(sort).populate("user", "username photo");
     if(gigs.length === 0){
         return res.status(404).json({message: "No gigs found"});
     }
-    res.json(gigs);
+    res.json({message: `${gigs.length} Gigs fetched successfully`, gigs});
 })
 
 const createGig = c(async (req, res, next) => {
