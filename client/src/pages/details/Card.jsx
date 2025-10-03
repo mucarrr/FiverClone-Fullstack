@@ -5,7 +5,7 @@ import Rating from './Rating'
 const Card = ({item}) => {
   return (
     <div className='flex flex-1'>
-    <Link to={`/details/${item._id}`} className=" rounded-md cursor-pointer flex flex-col gap-2 shadow-lg border border-gray-200">
+    <Link to={`/gig/${item._id}`} className=" rounded-md cursor-pointer flex flex-col gap-2 shadow-lg border border-gray-200">
 
         <img
             src={item?.coverImage}

@@ -6,15 +6,15 @@ const Title = ({category, search}) => {
         {
             search ? (
                 <p>
-                    <span className='font-bold'>{search}</span> için arama sonuçları
+                    Search results for <span className='font-bold'>{search}</span>
                 </p>
             ) : category ? (
                 <p>
-                    <span className='font-bold'>{category}</span> kategorisi için arama sonuçları
+                    Search results for <span className='font-bold'>{category}</span> category
                 </p>
             )
             : (
-                <p>Bütün sonuçlar</p>
+                <p>All results</p>
             )
         }
     </h1>

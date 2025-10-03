@@ -23,6 +23,7 @@ const Hero = () => {
           />
           <button className='bg-[#0a4226] m-1 p-2 rounded-md hover:opacity-75 transition cursor-pointer'>
             <IoSearchOutline />
+           
           </button>
         </form>
       </div>

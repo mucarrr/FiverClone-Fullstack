@@ -60,3 +60,67 @@ export const items = [
 ]
 
 export const notFound = "https://media.istockphoto.com/id/1409329028/vector/no-picture-available-placeholder-thumbnail-icon-illustration-design.jpg?s=612x612&w=0&k=20&c=_zOuJu755g2eEUioiOUdz_mHKJQJn-tDgIAhQzyeKUQ="
+
+export const inputs = [
+    {
+        label: "Title",
+        name: "title",
+        required: true,
+    },
+    {
+        label: "Description",
+        name: "description",
+        required: true,
+    },
+    {
+        label : "Package Title",
+        name: "packageTitle",
+        required: true,
+    },
+    {
+        label: "Cover Image",
+        name: "coverImage",
+        required: true,
+        type: "file",
+    },
+    {
+        label: "Images",
+        name: "images",
+        required: true,
+        type: "file",
+        multiple: true,
+    },
+    {
+        label: "Package Revision",
+        name: "packageRevision",
+        required: true,
+        type: "number",
+        min: 1,
+    },
+    {
+        label: "Package Features",
+        name: "packageFeatures",
+        required: true,
+        type: "textarea",
+    },
+    {
+        label: "Package Description",
+        name: "packageDescription",
+        required: true,
+    },
+    {
+        label: "Package Duration",
+        name: "packageDuration",
+        required: true,
+        type: "number",
+        min: 1,
+    },
+    {
+        label: "Package Price",
+        name: "packagePrice",
+        required: true,
+        type: "number",
+        min: 1,
+    },
+    
+]
