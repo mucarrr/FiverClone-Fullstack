@@ -1,6 +1,5 @@
 import React from 'react'
 import Header from './components/Header'
-import Footer from './components/Footer'
 import Home from './pages/home/Home'
 import Create from './pages/create/Create'
 import Details from './pages/details/Details'
@@ -30,7 +29,6 @@ const App = () => {
           <Route path="/search" element={<Search />} />
         </Routes>
       </div>
-      <Footer />
       <ToastContainer />
     </div>
     </AuthProvider>
